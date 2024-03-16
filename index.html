@@ -43,8 +43,9 @@
           </div>
           <div class="text-container">
             <p id="head">Happy Birthday!</p>
-            <p id="head">Mounika</p>
-            <h5>@Mounika</h5>
+            <p id="head" style="color: rgba(41, 255, 230, 0.918);">Mounika</p>
+            <!-- <h5>@Mounika</h5> -->
+            <p>Date:18-03-2024</p>
             <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
             <p>Hope your day goes great!</p>
           </div>
@@ -52,24 +53,24 @@
       </div>
     </div>
     <!-- Audio element to play the song -->
-    <audio id="birthdaySong" src="images-audio/happy-birthday.mp3" preload="auto"></audio>
+    <audio id="birthdaySong" src="happy-birthday.mp3"></audio>
 
-    <script>
-        // JavaScript to play the song when the card is visited
-        document.addEventListener("DOMContentLoaded", function () {
-            var card = document.querySelector('.card');
-            var audio = document.getElementById('birthdaySong');
+<script>
+    // JavaScript
+    document.addEventListener("DOMContentLoaded", function () {
+        var card = document.querySelector('.card-container');
+        var audio = document.getElementById('birthdaySong');
 
-            card.addEventListener('mouseenter', function () {
-                audio.play();
-            });
-
-            card.addEventListener('mouseleave', function () {
-                audio.pause();
-                audio.currentTime = 0;
-            });
+        card.addEventListener('mouseenter', function () {
+            audio.play();
         });
-    </script>
+
+        card.addEventListener('mouseleave', function () {
+            audio.pause();
+            audio.currentTime = 0;
+        });
+    });
+</script>
 </body>
 
 </html>

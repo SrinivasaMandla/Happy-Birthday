@@ -128,7 +128,7 @@ body {
     height: 260px;
   }
   .card-container {
-    margin-top: 30px;
+    margin-top: 80px;
   }
   .card {
     width: 150px;
@@ -172,7 +172,7 @@ body {
 
 @media (min-width:450px) and (max-width:686px) {
   .card-container {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .card {

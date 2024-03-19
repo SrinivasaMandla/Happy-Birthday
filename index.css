@@ -10,11 +10,35 @@ body {
   background-size: cover;
 }
 
+/* Banner of the show animation */
+.banner:before {
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(images-audio/snow.png);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: 0 550px;
+  }
+}
+
+/* Birthday Card main Class */
 .card-container {
   position: relative;
   margin-top: 70px;
 }
 
+/* Open Card right side Birthday Content  */
 .card {
   position: relative;
   width: 300px;
@@ -60,6 +84,7 @@ body {
   margin: 20px auto 0px auto;
 }
 
+/* Birthday Card  content  */
 .card .front {
   position: absolute;
   width: 100%;
@@ -91,6 +116,7 @@ body {
   background-color: #d2dcd2;
 }
 
+/* Open Card Left side Image Content  */
 .card .back {
   position: absolute;
   width: 100%;
@@ -106,7 +132,7 @@ body {
   transition: all 0.8s ease-in-out;
   background-color: #ffffff;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("images-audio/mouni.png");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("images-audio/th.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
